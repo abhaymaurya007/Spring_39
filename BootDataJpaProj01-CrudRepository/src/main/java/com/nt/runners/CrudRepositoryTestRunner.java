@@ -24,19 +24,15 @@ public class CrudRepositoryTestRunner implements CommandLineRunner {
     
 	@Override
 	public void run(String... args) throws Exception {
-		/*	try {
-				//prepare Entity object
-				 Actor  actor=new Actor();
-				 actor.setAname("rajesh");  actor.setCategory("villian"); actor.setContactNo(9819999L);
-				 actor.setAddrs("vizag"); actor.setFee(14145777.0);
-				 
-				 //invoke the service method
-				 String msg=actorService.registerActor(actor);
-				 System.out.println(msg);
-			}//try
-			catch(Exception e) {
-				e.printStackTrace();
-			}*/
+		/*
+		 * try { //prepare Entity object Actor actor=new Actor();
+		 * actor.setAname("rajesh"); actor.setCategory("villian");
+		 * actor.setContactNo(9819999L); actor.setAddrs("vizag");
+		 * actor.setFee(14145777.0);
+		 * 
+		 * //invoke the service method String msg=actorService.registerActor(actor);
+		 * System.out.println(msg); }//try catch(Exception e) { e.printStackTrace(); }
+		 */
 		/*try {
 			long count=actorService.showActorsCount();
 			System.out.println("Actors  count::"+count);
