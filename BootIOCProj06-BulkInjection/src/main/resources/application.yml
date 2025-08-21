@@ -1,0 +1,35 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+
+spring:
+    #custom yml fileconfiguration
+   config:
+         import: info1.yml 
+   application:
+    name: BootIOCProj06-BulkInjection
+per:
+  info:
+    id: 1001
+    name: raja
+    addrs: hyd
+    email: raja@rajamata.com
+    mobileNo: 9999999
+    fav-colors: maroon,yellow,cyan
+    favColors:
+    - red
+    - green
+    - blue
+    friends: srinivas, mahesh,suresh
+    phone-numbers: 999999,8888888,7777777
+    idDetails:
+      aadhar: 454553534
+      voterid: 45345535
+      panno: 4556655
+    company:
+      cid: 5678
+      cname: rajesh
+      location: hyd
+      pinCode: 500020
+  data:
+    mail: raja@rani.com

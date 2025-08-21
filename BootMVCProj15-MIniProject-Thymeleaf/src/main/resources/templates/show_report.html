@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<h1  style="color:green;text-align:center"> Show Report Page </h1>
+
+  <div th:if="${!doctorsList.empty}">
+    <table  bgcolor="cyan"  align="center"  border="1">
+       <tr>
+         <th> Id </th> <th> Name </th> <th>Specialization </th>  <th> Fee </th> <th> Qualification</th> <th> Operations  </th>
+       </tr>
+          <tr  th:each="doc:${doctorsList}">
+              <td> <span th:text="${doc.did}"/> </td>
+              <td> <span th:text="${doc.dname}"/> </td>
+              <td> <span th:text="${doc.specialization}"/> </td>
+              <td> <span th:text="${doc.fee}"/> </td>
+              <td> <span th:text="${doc.qlfy}"/> </td>
+              <td> <a th:href="@{/doctor/edit(no=${doc.did})}"><img th:src="@{/images/edit.jpg}" width="30px" height="30px"></a>   &nbsp;&nbsp;
+                        <a th:href="@{/doctor/delete(no=${doc.did})}"  onclick="return confirm('Do you Really want to delete the Record?')"><img th:src="@{/images/delete.jpg}" width="30px" height="30px"></a>   
+              </td>
+          </tr> 
+      </table>
+  </div>
+  <div  th:if="${doctorsList.empty}">
+              <h1  style="color:red;text-align:center"> No Doctors Are Found </h1>
+  </div>
+
+   <h1  style="color:red;text-align:center"><a th:href="@{/doctor/register}">Add Dcotor<img th:src="@{/images/add.jpg}" ></a>
+   <br><br>
+      <h1  style="color:green;text-align:center"><span th:text="${resultMsg}"/></h1>
+   <br><br>
+   <h1  style="color:red;text-align:center"><a th:href="@{/doctor/home}">Home<img th:src="@{/images/home.jpg}" ></a>
+   
+

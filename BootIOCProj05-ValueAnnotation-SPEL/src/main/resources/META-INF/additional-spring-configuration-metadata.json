@@ -1,0 +1,67 @@
+{"properties": [
+  {
+    "name": "cc.cjava.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.cjava.fee'"
+  },
+  {
+    "name": "cc.ajava.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.ajava.fee'"
+  },
+  {
+    "name": "cc.oracle.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.oracle.fee'"
+  },
+  {
+    "name": "cc.spmbs.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.spmbs.fee'"
+  },
+  {
+    "name": "cc.angular.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.angular.fee'"
+  },
+  {
+    "name": "cc.aws.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.aws.fee'"
+  },
+  {
+    "name": "cc.devops.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.devops.fee'"
+  },
+  {
+    "name": "cc.testing.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.testing.fee'"
+  },
+  {
+    "name": "inst.name",
+    "type": "java.lang.String",
+    "description": "A description for 'inst.name'"
+  },
+  {
+    "name": "inst.email",
+    "type": "java.lang.String",
+    "description": "A description for 'inst.email'"
+  },
+  {
+    "name": "inst.addrs",
+    "type": "java.lang.String",
+    "description": "A description for 'inst.addrs'"
+  },
+  {
+    "name": "inst.phone",
+    "type": "java.lang.String",
+    "description": "A description for 'inst.phone'"
+  },
+  {
+    "name": "cc.spbms.fee",
+    "type": "java.lang.String",
+    "description": "A description for 'cc.spbms.fee'"
+  }
+]}

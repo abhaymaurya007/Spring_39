@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+        <!-- Configure java classes as spring beans -->
+        <bean id="ltime"  class="java.time.LocalTime"  factory-method="now"/>  <!-- Dependent spring bean -->
+        <bean id="ldate"  class="java.time.LocalDate"  factory-method="now"/><!-- Dependent spring bean -->
+        
+        <!-- target spring bean  -->
+        <bean id="wmg"  scope="singleton" class="com.nt.sbeans.WishMessageGenerator">  <!-- target spring bean -->
+             <!-- setter injection configuration  to inject ltime obj(LocalTime obj) to "time" property of "wmg" obj(WishMessageGenerator) -->
+              <property name="time"  ref="ltime"/>
+              <property name="date"  ref="ldate"/>
+        </bean>
+        
+        <bean id="prn"  class="com.nt.ston.Printer"  factory-method="getInstance"/>
+        <bean id="prn1"  class="com.nt.ston.Printer"  factory-method="getInstance"/>
+        
+        
+        
+                           
+  </beans>
